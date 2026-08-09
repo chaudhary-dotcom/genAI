@@ -1,20 +1,20 @@
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 from langchain_huggingface import HuggingFaceEndpointEmbeddings
 from sklearn.metrics.pairwise import cosine_similarity
 
-load_dotenv()
+# load_dotenv()
 
-token = os.getenv("HF_TOKEN")
+# token = os.getenv("HF_TOKEN")
 
-if not token:
-    raise ValueError("HF_TOKEN not found")
+# if not token:
+#     raise ValueError("HF_TOKEN not found")
 
 
 embeddings = HuggingFaceEndpointEmbeddings(
     model="BAAI/bge-small-en-v1.5",
-    huggingfacehub_api_token=token,
+    # huggingfacehub_api_token=token,
     
 )
 
