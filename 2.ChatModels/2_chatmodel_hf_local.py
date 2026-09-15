@@ -15,5 +15,5 @@ llm = HuggingFacePipeline.from_model_id(
 
 model = ChatHuggingFace(llm=llm)
 
-result = model.invoke("In which topic you trained most ?")
+result = model.invoke("summarizze the word2vec paper in 5 lines")
 print(result.content)

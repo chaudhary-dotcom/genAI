@@ -21,7 +21,7 @@ llm = HuggingFaceEndpoint(
 model = ChatHuggingFace(llm=llm)
 
 result = model.invoke(
-    "mero Naam K ho ?"
+    "what is the current datetime?"
 )
 
 print(result.content)
